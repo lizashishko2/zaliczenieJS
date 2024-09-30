@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikacja Mapy</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="map-container">
+        <div id="map"></div>
+        <div id="form-container">
+            <h3>Formularz szczegółów miejsca</h3>
+            <form id="place-form">
+                <label for="name">Nazwa:</label>
+                <input type="text" id="name" name="name"><br>
+
+                <label for="description">Opis:</label>
+                <textarea id="description" name="description"></textarea><br>
+
+                <label for="coordinates">Koordynaty:</label>
+                <input type="text" id="coordinates" name="coordinates" readonly><br>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

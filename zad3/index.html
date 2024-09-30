@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz Rejestracji</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Rejestracja Użytkownika</h1>
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="firstName">Imię:</label>
+                <input type="text" id="firstName" name="firstName" required>
+                <span class="error" id="firstNameError"></span>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Nazwisko:</label>
+                <input type="text" id="lastName" name="lastName" required>
+                <span class="error" id="lastNameError"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error" id="emailError"></span>
+            </div>
+            <div class="form-group">
+                <label for="password">Hasło:</label>
+                <input type="password" id="password" name="password" required>
+                <span class="error" id="passwordError"></span>
+            </div>
+            <button type="submit">Zarejestruj się</button>
+        </form>
+        <div id="successMessage" class="success"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
